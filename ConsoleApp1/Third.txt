@@ -1,0 +1,141 @@
+  Что означает EF в Entity Framework?
+    	a) Electronic Forms
+    	b) Entity Framework
+    	c) Efficient Functions
+@
+
+	Какой паттерн программирования реализует Entity Framework?
+    	a) MVC
+    	b) MVVM
+    	c) ORM
+@
+
+	Что такое "отложенная загрузка" (Lazy Loading) в Entity Framework?
+    	a) Загрузка данных только при явном запросе.
+    	b) Автоматическая загрузка всех данных.
+    	c) Загрузка данных после вызова SaveChanges.
+@
+
+	Как указать первичный ключ в Code First подходе?
+    	a) [PrimaryKey]
+    	b) [Key]
+    	c) [Primary]
+@
+
+	Каким образом можно удалить запись из базы данных с использованием Entity Framework?
+    	a) context.Delete(entity)
+    	b) context.Remove(entity)
+    	c) context.Entry(entity).Remove()
+
+@
+	Что такое "Database First" подход в Entity Framework?
+    	a) Создание базы данных с использованием кода.
+    	b) Создание кода классов на основе существующей базы данных.
+    	c) Создание модели базы данных из Entity Framework.
+
+@
+	Как создать новую базу данных с использованием Entity Framework Code First?
+    	a) context.CreateDatabase()
+    	b) context.Database.Create()
+    	c) context.Database.EnsureCreated()
+
+@
+	Как указать, что свойство не должно участвовать в маппинге в Code First?
+    	a) [NotMapped]
+    	b) [Ignore]
+    	c) [Exclude]
+@
+
+	Каким образом можно выполнить "отложенное сохранение" изменений в Entity Framework?
+    	a) context.SaveChanges()
+    	b) context.DelayedSaveChanges()
+    	c) Изменения автоматически сохраняются.
+
+
+
+@
+	Как указать схему для таблицы в Entity Framework Code First?
+    	a) [Schema("dbo")]
+    	b) [TableSchema("dbo")]
+    	c) [Database("dbo")]
+@
+
+	Как добавить индекс в столбец с использованием Entity Framework Code First?
+    	a) [Index]
+    	b) [Key]
+    	c) [CreateIndex]
+@
+
+	Что представляет собой класс DbContext в Entity Framework?
+    	a) Класс для работы с миграциями.
+    	b) Класс для определения модели данных и взаимодействия с базой данных.
+    	c) Класс для управления сессиями пользователя.
+
+@
+	Как удалить все записи из таблицы с использованием Entity Framework?
+    	a) context.TruncateTable("MyTable")
+    	b) context.DeleteAll("MyTable")
+    	c) context.Database.ExecuteSqlCommand("TRUNCATE TABLE MyTable")
+@
+
+	Как создать индекс для столбца в Entity Framework Code First?
+    	a) [Index]
+    	b) [Key]
+    	c) [CreateIndex]
+@
+
+	Что такое "Database Context" в Entity Framework?
+    	a) Объект, предоставляющий доступ к базе данных и управляющий изменениями.
+    	b) Контекст для работы с изображениями в базе данных.
+    	c) Объект для выполнения запросов к базе данных.
+
+@
+	Как указать, что свойство является внешним ключом в Entity Framework Code First?
+    	a) [ForeignKey]
+    	b) [Key]
+    	c) [ExternalKey]
+
+@
+
+
+	Как определить отношение "многие ко многим" в Entity Framework Code First?
+    	a) [ManyToMany]
+    	b) [BelongsToMany]
+    	c) [JoinTable]
+@
+
+
+
+	Как указать, что связь между таблицами является обязательной в Entity Framework Code First?
+    	a) [Required]
+    	b) [Mandatory]
+    	c) [NotNull]
+@
+
+
+	Каким образом можно использовать "Raw SQL Queries" в Entity Framework Core?
+    	a) context.ExecuteRawSql("SELECT * FROM Table")
+    	b) context.Database.SqlQuery("SELECT * FROM Table")
+    	c) context.RawSqlQuery("SELECT * FROM Table")
+
+@
+	Как выполнить "жадную загрузку" связанных данных в Entity Framework Core?
+    	a) Include метод.
+    	b) Load метод.
+    	c) Автоматическая загрузка всех связанных данных.
+
+@
+Какова цель Code-First подхода в Entity Framework?
+
+
+	a) Автоматическое создание кода из существующей базы данных.
+	b) Создание моделей данных сущностей на основе кода, а затем автоматическое создание базы данных.
+	c) Визуальное проектирование базы данных.
+@
+
+Каким образом Entity Framework обеспечивает работу с транзакциями?
+
+
+	a) Автоматически управляет транзакциями без дополнительной конфигурации.
+	b) Использует явные вызовы методов BeginTransaction и Commit.
+	c) Транзакции не поддерживаются Entity Framework.
